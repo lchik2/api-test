@@ -1,0 +1,14 @@
+<ion-view align-title="center" view-title="Random Quote Generator">
+    <ion-content>
+      <ion-refresher pulling-text="Pull to refresh..." on-refresh="getQuote()">
+      </ion-refresher>
+      {{quote}}
+      <br>
+      {{author}}
+    </ion-content>
+  <ion-footer-bar class="bar-dark">
+      <button class="button button-clear button-full" ng-click="getQuote()" id="getQuoteButton">
+      Get Quote
+      </button>
+  </ion-footer-bar>
+</ion-view>

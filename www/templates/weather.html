@@ -1,0 +1,21 @@
+<ion-view view-title="Weather Forecast">
+	<ion-content>
+	<label class="item item-input">
+	  <span class="input-label">City</span>
+	  <input type="text" ng-model="search.city">
+	</label> 	
+	<ion-list>
+      <ion-item class="item-avatar" ng-repeat="" type="item-text-wrap" href="">
+        <img ng-src="">
+        <h2>{{}}</h2>
+      </ion-item>
+    </ion-list>
+	Powered by <a href="http://www.worldweatheronline.com/" title="Free Weather API" target="_blank">World Weather Online</a>	
+	</ion-content>
+	<ion-footer-bar class="bar-dark">
+      <button class="button button-clear button-full" ng-click="getWeather()" id="getWeatherButton">
+      Get Weather
+      </button>
+  	</ion-footer-bar>
+</ion-view>
+
